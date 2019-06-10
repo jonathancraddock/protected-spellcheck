@@ -1,6 +1,8 @@
 # Protected Spellcheck
 Macro to easily spell check a field in a "protected" Word 2003 document.
 
+![empty form](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-1.png "Empty protected form.")
+
 ```VBScript
 Option Explicit
 
