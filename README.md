@@ -38,4 +38,6 @@ Sub jcCheckFieldSpelling()
 End Sub
 ```
 
+![field dialog](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-2.png "Form field dialog.")
+
 Apply to individual form fields using the "on-exit" event.
