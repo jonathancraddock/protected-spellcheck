@@ -1,7 +1,28 @@
 # Protected Spellcheck
-Macro to easily spell check a field in a "protected" Word 2003 document.
+
+### Scenario
+
+External third-parties provide users with a Word document/template (in Word 2003 format) which they are required to complete and submit. The document is protected and users enter text into plain text form fields. The process can be frustrating since these legacy fields offer restricted editing and it is not possible to spell-check their content.
+
+Workarounds range from the inconvenient, to the absurd.
+
+* Colleagues or line managers are required to proof read and correct the text
+* Text can be pre-checked and pasted into the field once complete
+* Users can goodly enter they're text without no grammar or speelingz are incorrect
+
+### Running a Spellcheck on a Field
+
+Whilst it's true that these fields cannot be readily spell-checked, a Word Macro can be triggered by an "on-exit" event to easily spell check a field in a "protected" Word 2003 document.
+
+The following proof of concept illustrates this, along with a simple dialog to allow the user to skip the spellcheck if required. It is envisaged that the Macro would only be applied to fields with paragraph text, since checking name, address, dae-of-birth, and other similar fields is likely to be counter productive.
+
+The user sees a form as per the example below:
 
 ![empty form](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-1.png "Empty protected form.")
+
+### Macro
+
+A Macro, see below, is triggered automatically by the "Run Macro... On Exit" event.
 
 ```VBScript
 Option Explicit
@@ -38,6 +59,6 @@ Sub jcCheckFieldSpelling()
 End Sub
 ```
 
-![field dialog](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-2.png "Form field dialog.")
+The Macro can be applied to selected fields as shown below: 
 
-Apply to individual form fields using the "on-exit" event.
+![field dialog](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-2.png "Form field dialog.")
