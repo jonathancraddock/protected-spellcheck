@@ -14,7 +14,7 @@ Workarounds range from the inconvenient, to the absurd.
 
 Whilst it's true that these fields cannot be readily spell-checked, a Word Macro can be triggered by an "on-exit" event to easily spell check a field in a "protected" Word 2003 document.
 
-The following proof of concept illustrates this, along with a simple dialog to allow the user to skip the spellcheck if required. It is envisaged that the Macro would only be applied to fields with paragraph text, since checking name, address, dae-of-birth, and other similar fields is likely to be counter productive.
+The following proof of concept illustrates this, along with a simple dialog to allow the user to skip the spellcheck if required. It is envisaged that the Macro would only be applied to fields with paragraph text, since checking name, address, date-of-birth, and other similar fields is likely to be counter productive.
 
 The user sees a form as per the example below:
 
@@ -62,3 +62,21 @@ End Sub
 The Macro can be applied to selected fields as shown below: 
 
 ![field dialog](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-2.png "Form field dialog.")
+
+The user is prompted as they exit the field with the "Tab" key, or by clicking elsewhere in the document.
+    
+![prompt](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-3.png "Spell check prompt.")
+
+Word's own spell-check is used to check the field spelling.
+
+![suggestions](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-4.png "Suggestions.")
+
+User sees an info dialog once the spell check is complete.
+
+![complete](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-5.png "Spell check complete.")
+
+And, the field is updated with any corrections that have taken place.
+
+![corrected](https://github.com/jonathancraddock/protected-spellcheck/blob/master/prot-spell-6.png "Spelling corrected.")
+
+At this point, the user continues with the form as usual.
