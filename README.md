@@ -8,7 +8,7 @@ Workarounds range from the inconvenient, to the absurd.
 
 * Colleagues or line managers are required to proof read and correct the text
 * Text can be pre-checked and pasted into the field once complete
-* Users can goodly enter they're text without no grammar or speelingz are incorrect
+* Users can goodly enter they're text without no grammar or speelingz are being incorrect
 
 ### Running a Spellcheck on a Field
 
